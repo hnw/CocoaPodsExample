@@ -11,12 +11,12 @@
 		45D04AC2FFD6FA1A48425E4C /* Pods_CocoaPodsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2252ECB8B94FE20702BA8C /* Pods_CocoaPodsExample.framework */; };
 		A69F9F9490C611835AEE8EB5 /* Pods_CocoaPodsExampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4BB99EBD5C12A317814C3B9 /* Pods_CocoaPodsExampleTests.framework */; };
 		FEA7FDFA1D0D75BE00D17824 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7FDF91D0D75BE00D17824 /* AppDelegate.swift */; };
-		FEA7FDFC1D0D75BE00D17824 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7FDFB1D0D75BE00D17824 /* ViewController.swift */; };
 		FEA7FDFF1D0D75BE00D17824 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA7FDFD1D0D75BE00D17824 /* Main.storyboard */; };
 		FEA7FE011D0D75BE00D17824 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA7FE001D0D75BE00D17824 /* Assets.xcassets */; };
 		FEA7FE041D0D75BE00D17824 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEA7FE021D0D75BE00D17824 /* LaunchScreen.storyboard */; };
 		FEA7FE0F1D0D75BF00D17824 /* CocoaPodsExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7FE0E1D0D75BF00D17824 /* CocoaPodsExampleTests.swift */; };
 		FEA7FE1A1D0D75BF00D17824 /* CocoaPodsExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA7FE191D0D75BF00D17824 /* CocoaPodsExampleUITests.swift */; };
+		FEC6E5871D0D8768006C63FB /* ArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC6E5861D0D8768006C63FB /* ArticleListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +48,6 @@
 		ED6CF8B66C9707D8091ABE72 /* Pods_CocoaPodsExampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaPodsExampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA7FDF61D0D75BE00D17824 /* CocoaPodsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaPodsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA7FDF91D0D75BE00D17824 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FEA7FDFB1D0D75BE00D17824 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FEA7FDFE1D0D75BE00D17824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FEA7FE001D0D75BE00D17824 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA7FE031D0D75BE00D17824 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +58,7 @@
 		FEA7FE151D0D75BF00D17824 /* CocoaPodsExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaPodsExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEA7FE191D0D75BF00D17824 /* CocoaPodsExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaPodsExampleUITests.swift; sourceTree = "<group>"; };
 		FEA7FE1B1D0D75BF00D17824 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEC6E5861D0D8768006C63FB /* ArticleListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,11 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				FEA7FDF91D0D75BE00D17824 /* AppDelegate.swift */,
-				FEA7FDFB1D0D75BE00D17824 /* ViewController.swift */,
 				FEA7FDFD1D0D75BE00D17824 /* Main.storyboard */,
 				FEA7FE001D0D75BE00D17824 /* Assets.xcassets */,
 				FEA7FE021D0D75BE00D17824 /* LaunchScreen.storyboard */,
 				FEA7FE051D0D75BE00D17824 /* Info.plist */,
+				FEC6E5861D0D8768006C63FB /* ArticleListViewController.swift */,
 			);
 			path = CocoaPodsExample;
 			sourceTree = "<group>";
@@ -427,8 +427,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FEA7FDFC1D0D75BE00D17824 /* ViewController.swift in Sources */,
 				FEA7FDFA1D0D75BE00D17824 /* AppDelegate.swift in Sources */,
+				FEC6E5871D0D8768006C63FB /* ArticleListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
